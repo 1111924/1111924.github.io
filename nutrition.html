@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>营养价值 - 云南高原蓝莓</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+   <!-- 头部区域 -->
+   <header class="header">
+       <div class="container">
+           <div class="logo">
+               <img src="img/logo.png" alt="云南高原蓝莓">
+               <h1>云南高原蓝莓</h1>
+           </div>
+           <div class="slogan">纯净高原 · 自然美味</div>
+       </div>
+   </header>
+   
+   <!-- 导航栏 -->
+   <nav class="navbar">
+       <div class="container">
+           <ul>
+               <li><a href="index.html"class="nav-link">首页</a></li>
+               <li ><a href="products.html" class="nav-link">产品系列</a></li>
+               <li ><a href="about.html" class="nav-link">产地特色</a></li>
+               <li ><a href="nutrition.html" class="nav-link">营养价值</a></li>
+               <li ><a href="purchase.html" class="nav-link">购买渠道</a></li>
+               <li ><a href="profile.html" class="nav-link">关于我们</a></li>
+           </ul>
+       </div>
+   </nav>
+   
+
+    <!-- 页面标题 -->
+    <section class="page-header nutrition-header">
+        <div class="container">
+            <h1>云南高原蓝莓营养价值</h1>
+            <p>大自然的超级食物，健康生活的选择</p>
+        </div>
+    </section>
+
+    <!-- 内容区 -->
+    <main class="container">
+        <!-- 营养成分概览 -->
+        <section class="content-section">
+            <div class="section-header">
+                <h2>营养成分概览</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="nutrition-overview">
+                <div class="nutrition-card">
+                    <div class="nutrition-icon">
+                        <img src="img/花青素.png" alt="花青素">
+                    </div>
+                    <h3>花青素含量</h3>
+                    <div class="nutrition-value">15.8mg/100g</div>
+                    <p>是普通蓝莓的1.5倍，抗氧化能力更强</p>
+                </div>
+                <div class="nutrition-card">
+                    <div class="nutrition-icon">
+                        <img src="img/维c.png" alt="维生素">
+                    </div>
+                    <h3>维生素C</h3>
+                    <div class="nutrition-value">9.7mg/100g</div>
+                    <p>满足每日需求的16%，增强免疫力</p>
+                </div>
+                <div class="nutrition-card">
+                    <div class="nutrition-icon">
+                        <img src="img/纤维.png" alt="膳食纤维">
+                    </div>
+                    <h3>膳食纤维</h3>
+                    <div class="nutrition-value">2.4g/100g</div>
+                    <p>促进肠道健康，帮助消化</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 健康益处 -->
+        <section class="content-section">
+            <div class="section-header">
+                <h2>健康益处</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-image">
+                        <img src="img/视力.png" alt="护眼">
+                        <div class="image-overlay">
+                            <span>了解更多</span>
+                        </div>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>保护视力</h3>
+                        <p>蓝莓中的花青素能加速视紫红质再生，缓解眼疲劳，预防近视和黄斑变性。研究表明，每天食用50g蓝莓可显著改善夜间视力。</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-image">
+                        <img src="img/脑力.png" alt="健脑">
+                        <div class="image-overlay">
+                            <span>了解更多</span>
+                        </div>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>增强脑力</h3>
+                        <p>蓝莓中的抗氧化物质能穿越血脑屏障，减少脑细胞氧化损伤。长期食用可改善记忆力，延缓认知衰退，降低阿尔茨海默病风险。</p>
+                    </div>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-image">
+                        <img src="img/心.png" alt="护心">
+                        <div class="image-overlay">
+                            <span>了解更多</span>
+                        </div>
+                    </div>
+                    <div class="benefit-content">
+                        <h3>心血管健康</h3>
+                        <p>蓝莓能降低坏胆固醇(LDL)氧化，改善血管内皮功能。每天一杯蓝莓汁，连续8周可使血压降低6-8mmHg。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 营养成分对比 -->
+        <section class="content-section">
+            <div class="section-header">
+                <h2>与其他水果营养对比</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="comparison-chart">
+                <div class="chart-container">
+                    <canvas id="nutritionChart"></canvas>
+                </div>
+                <div class="chart-legend">
+					<img src="img/柱状图.png" width="1000px" height="1500px"/>
+                    <ul>
+                        <li><span class="legend-color blueberry"></span>云南高原蓝莓</li>
+                        <li><span class="legend-color apple"></span>苹果</li>
+                        <li><span class="legend-color banana"></span>香蕉</li>
+                        <li><span class="legend-color orange"></span>橙子</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 食用建议 -->
+        <section class="content-section">
+            <div class="section-header">
+                <h2>食用建议</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="usage-tips">
+                <div class="tip-card">
+                    <div class="tip-image">
+                        <img src="img/新鲜.jpg" alt="新鲜食用">
+                    </div>
+                    <div class="tip-content">
+                        <h3>新鲜食用</h3>
+                        <p>洗净后直接食用，每日建议量50-100g。早餐搭配酸奶或燕麦，营养吸收更佳。</p>
+                    </div>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-image">
+                        <img src="img/冰沙.jpg" alt="蓝莓冰沙">
+                    </div>
+                    <div class="tip-content">
+                        <h3>蓝莓冰沙</h3>
+                        <p>将蓝莓与香蕉、牛奶混合搅拌，制成营养丰富的抗氧化饮品。</p>
+                    </div>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-image">
+                        <img src="img/甜品.jpg" alt="甜点装饰">
+                    </div>
+                    <div class="tip-content">
+                        <h3>甜点装饰</h3>
+                        <p>点缀在蛋糕、松饼或冰淇淋上，增添色彩和营养。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<div class="back-to-home">
+	    <a href="index.html" class="btn btn-primary">返回首页</a>
+	</div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于我们</h3>
+                    <p>云南高原蓝莓种植基地成立于2015年，致力于为消费者提供高品质的有机蓝莓。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>联系方式</h3>
+                    <p>电话: 0871-12345678</p>
+                    <p>邮箱: info@ynblueberry.com</p>
+                    <p>地址: 云南省昆明市呈贡区蓝莓大道1号</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="products.html">产品系列</a></li>
+                        <li><a href="purchase.html">购买渠道</a></li>
+                        <li><a href="profile.html">关于我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 张跃圆 版权所有</p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="js/main.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/chart.js"></script>
+</body>
+</html>

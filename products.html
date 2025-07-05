@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品系列 - 云南高原蓝莓</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- 头部区域 -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="云南高原蓝莓">
+                <h1>云南高原蓝莓</h1>
+            </div>
+            <div class="slogan">纯净高原 · 自然美味</div>
+        </div>
+    </header>
+    
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="index.html" class="nav-link">首页</a></li>
+                <li ><a href="products.html" class="nav-link">产品系列</a></li>
+                <li ><a href="about.html" class="nav-link" >产地特色</a></li>
+                <li ><a href="nutrition.html" class="nav-link">营养价值</a></li>
+                <li ><a href="purchase.html" class="nav-link">购买渠道</a></li>
+                <li ><a href="profile.html" class="nav-link">关于我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1 class="page-title">我们的产品系列</h1>
+        
+        <div class="product-filter">
+            <form id="filter-form">
+                <div class="form-group">
+                    <label for="category">产品类别:</label>
+                    <select id="category" name="category">
+                        <option value="all">全部</option>
+                        <option value="fresh">鲜果系列</option>
+                        <option value="processed">加工产品</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="size">规格:</label>
+                    <select id="size" name="size">
+                        <option value="all">全部</option>
+                        <option value="small">小果(10-12mm)</option>
+                        <option value="medium">中果(12-14mm)</option>
+                        <option value="large">大果(14mm以上)</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn">筛选</button>
+            </form>
+        </div>
+
+        <div class="product-list">
+            <article class="product-item">
+                <div class="product-image">
+                    <img src="img/礼盒装.jpg" alt="鲜果礼盒">
+                    <div class="product-badge">新品</div>
+                    <div class="image-hover-effect"></div>
+                </div>
+                <div class="product-info">
+                    <h2><a href="detail.html?id=1">高原蓝莓鲜果礼盒</a></h2>
+                    <p class="product-desc">精选大果，礼盒包装，适合送礼</p>
+                    <div class="product-meta">
+                        <span class="price">¥98/盒</span>
+                        <span class="spec">250g/盒</span>
+                    </div>
+                    <a href="detail.html?id=1" class="btn">查看详情</a>
+                </div>
+            </article>
+
+            <article class="product-item">
+                <div class="product-image">
+                    <img src="img/家庭装.jpg" alt="家庭装">
+                    <div class="image-hover-effect"></div>
+                </div>
+                <div class="product-info">
+                    <h2><a href="detail.html?id=2">高原蓝莓家庭装</a></h2>
+                    <p class="product-desc">经济实惠，适合全家享用</p>
+                    <div class="product-meta">
+                        <span class="price">¥68/盒</span>
+                        <span class="spec">500g/盒</span>
+                    </div>
+                    <a href="detail.html?id=2" class="btn">查看详情</a>
+                </div>
+            </article>
+
+            <article class="product-item">
+                <div class="product-image">
+                    <img src="img/果干.jpg" alt="蓝莓果干">
+                    <div class="product-badge">热销</div>
+                    <div class="image-hover-effect"></div>
+                </div>
+                <div class="product-info">
+                    <h2><a href="detail.html?id=3">高原蓝莓果干</a></h2>
+                    <p class="product-desc">低温烘干，保留营养</p>
+                    <div class="product-meta">
+                        <span class="price">¥45/袋</span>
+                        <span class="spec">100g/袋</span>
+                    </div>
+                    <a href="detail.html?id=3" class="btn">查看详情</a>
+                </div>
+            </article>
+
+            <article class="product-item">
+                <div class="product-image">
+                    <img src="img/果酱.jpg"  alt="蓝莓果酱">
+                    <div class="image-hover-effect"></div>
+                </div>
+                <div class="product-info">
+                    <h2><a href="detail.html?id=4">高原蓝莓果酱</a></h2>
+                    <p class="product-desc">无添加，纯天然</p>
+                    <div class="product-meta">
+                        <span class="price">¥38/瓶</span>
+                        <span class="spec">200g/瓶</span>
+                    </div>
+                    <a href="detail.html?id=4" class="btn">查看详情</a>
+                </div>
+            </article>
+        </div>
+
+    </main>
+	<div class="back-to-home">
+	    <a href="index.html" class="btn btn-primary">返回首页</a>
+	</div>
+<footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于我们</h3>
+                    <p>云南高原蓝莓种植基地成立于2015年，致力于为消费者提供高品质的有机蓝莓。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>联系方式</h3>
+                    <p>电话: 0871-12345678</p>
+                    <p>邮箱: info@ynblueberry.com</p>
+                    <p>地址: 云南省昆明市呈贡区蓝莓大道1号</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="js/products.html">产品系列</a></li>
+                        <li><a href="purchase.html">购买渠道</a></li>
+                        <li><a href="profile.html">关于我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 张跃圆 版权所有</p>
+            </div>
+        </div>
+    </footer>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>购买渠道 - 云南高原蓝莓</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- 头部区域 -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png" alt="云南高原蓝莓">
+                <h1>云南高原蓝莓</h1>
+            </div>
+            <div class="slogan">纯净高原 · 自然美味</div>
+        </div>
+    </header>
+    
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="index.html" class="nav-link">首页</a></li>
+                <li ><a href="products.html" class="nav-link">产品系列</a></li>
+                <li ><a href="about.html" class="nav-link">产地特色</a></li>
+                <li ><a href="nutrition.html" class="nav-link">营养价值</a></li>
+                <li ><a href="purchase.html" class="nav-link">购买渠道</a></li>
+                <li ><a href="profile.html" class="nav-link">关于我们</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <!-- 页面标题 -->
+    <section class="purchase-header">
+        <div class="container">
+            <h1>购买云南高原蓝莓</h1>
+            <p>多种便捷渠道，新鲜直达您家</p>
+        </div>
+    </section>
+
+    <!-- 内容区 -->
+    <main class="container">
+        <!-- 在线购买 -->
+        <section class="content-section">
+            <div class="section-header">
+                <h2>在线购买</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="platform-cards">
+                <div class="platform-card">
+                    <div class="platform-logo">
+                        <img src="img/天猫.jpg" alt="天猫">
+                    </div>
+                    <div class="platform-info">
+                        <h3>天猫旗舰店</h3>
+                        <p>官方直营，品质保证，全国包邮</p>
+                        <a href="https://www.tmall.com" target="_blank" class="btn btn-platform">前往购买</a>
+                    </div>
+                    <div class="platform-badge">
+                        <span>推荐</span>
+                    </div>
+                </div>
+                <div class="platform-card">
+                    <div class="platform-logo">
+                        <img src="img/京东.jpg" alt="京东">
+                    </div>
+                    <div class="platform-info">
+                        <h3>京东自营</h3>
+                        <p>211限时达，最快当日送达</p>
+                        <a href="https://www.jd.com" target="_blank" class="btn btn-platform">前往购买</a>
+                    </div>
+                </div>
+                <div class="platform-card">
+                    <div class="platform-logo">
+                        <img src="img/拼多多.jpg" alt="拼多多">
+                    </div>
+                    <div class="platform-info">
+                        <h3>拼多多旗舰店</h3>
+                        <p>团购优惠，价格更实惠</p>
+                        <a href="https://www.pinduoduo.com" target="_blank" class="btn btn-platform">前往购买</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 线下渠道 -->
+        <section class="content-section">
+            <div class="section-header">
+                <h2>线下零售</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="store-locator">
+                <div class="store-map">
+                    <img src="img/线下分布.png" alt="门店分布图" usemap="#storemap">
+                    <map name="storemap">
+                        <area shape="circle" coords="120,150,20" href="#" alt="昆明店" title="昆明店">
+                        <area shape="circle" coords="250,180,20" href="#" alt="成都店" title="成都店">
+                        <area shape="circle" coords="380,220,20" href="#" alt="上海店" title="上海店">
+                        <area shape="circle" coords="500,250,20" href="#" alt="北京店" title="北京店">
+                    </map>
+                    <div class="map-tooltip" id="mapTooltip"></div>
+                </div>
+                <div class="store-list">
+                    <div class="store-item">
+                        <h3>昆明旗舰店</h3>
+                        <p><i class="icon location"></i> 昆明市五华区青年路432号</p>
+                        <p><i class="icon phone"></i> 0871-12345678</p>
+                        <p><i class="icon time"></i> 营业时间: 9:00-21:00</p>
+                    </div>
+                    <div class="store-item">
+                        <h3>成都体验店</h3>
+                        <p><i class="icon location"></i> 成都市锦江区春熙路88号</p>
+                        <p><i class="icon phone"></i> 028-87654321</p>
+                        <p><i class="icon time"></i> 营业时间: 10:00-22:00</p>
+                    </div>
+                    <div class="store-more">
+                        <a href="#" class="btn btn-more">查看全部12家门店</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 团购定制 -->
+        <section class="content-section">
+            <div class="section-header">
+                <h2>团购定制</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="bulk-order">
+                <div class="bulk-image">
+                    <img src="img/团购.png" alt="团购定制">
+                </div>
+                <div class="bulk-form">
+                    <h3>企业/团体采购</h3>
+                    <p>一次性采购满100盒可享专属优惠，支持定制礼盒包装</p>
+                    <form id="bulkForm">
+                        <div class="form-group">
+                            <label for="company">公司/团体名称</label>
+                            <input type="text" id="company" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact">联系人</label>
+                            <input type="text" id="contact" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">联系电话</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="quantity">预计采购量(盒)</label>
+                            <input type="number" id="quantity" min="100" required>
+                        </div>
+                        <button type="submit" class="btn btn-submit">提交需求</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- 配送信息 -->
+        <section class="content-section">
+            <div class="section-header">
+                <h2>配送信息</h2>
+                <div class="section-divider"></div>
+            </div>
+            <div class="delivery-info">
+                <div class="delivery-card">
+                    <div class="delivery-icon">
+                        <img src="img/冷链.png" alt="冷链">
+                    </div>
+                    <h3>冷链配送</h3>
+                    <p>全程0-4℃保鲜，使用食品级保温箱+冰袋，确保新鲜</p>
+                </div>
+                <div class="delivery-card">
+                    <div class="delivery-icon">
+                        <img src="img/配送范围.png" alt="配送范围">
+                    </div>
+                    <h3>配送范围</h3>
+                    <p>全国300+城市次日达，偏远地区3-5天</p>
+                </div>
+                <div class="delivery-card">
+                    <div class="delivery-icon">
+                        <img src="img/退换货.png" alt="退换货">
+                    </div>
+                    <h3>退换货政策</h3>
+                    <p>收货后24小时内可申请退换，坏果包赔</p>
+                </div>
+            </div>
+            <div class="delivery-notice">
+                <h4>注意事项：</h4>
+                <ul>
+                    <li>签收时请当场验货，如有损坏请拒收并联系客服</li>
+                    <li>夏季高温地区建议选择上午配送时段</li>
+                    <li>收到后请立即冷藏保存，3天内食用最佳</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+	<div class="back-to-home">
+		    <a href="index.html" class="btn btn-primary">返回首页</a>
+		</div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>关于我们</h3>
+                    <p>云南高原蓝莓种植基地成立于2015年，致力于为消费者提供高品质的有机蓝莓。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>联系方式</h3>
+                    <p>电话: 0871-12345678</p>
+                    <p>邮箱: info@ynblueberry.com</p>
+                    <p>地址: 云南省昆明市呈贡区蓝莓大道1号</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="products.html">产品系列</a></li>
+                        <li><a href="purchase.html">购买渠道</a></li>
+                        <li><a href="profile.html">关于我们</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 张跃圆 版权所有</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
